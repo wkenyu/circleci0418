@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker:18.06.0-ce-git
+    steps:
+      - run:
+          name: Hello world
+          command: |
+            echo "Hello CircleCI!!"
